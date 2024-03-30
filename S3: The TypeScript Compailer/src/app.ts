@@ -49,3 +49,12 @@ button?.addEventListener("click", () => {
 //"sourceMap": true,
 
 // Developer tool => source sekmesi => ts fosyalarını da gösterir.
+
+// ********************** rootDir and outDir ******************************
+
+// tsc --init => config file
+// in tsconfig file
+
+// "outDir": "./dist"  => tsc ile oluşturulan dosyaların nerede oluşturulacağını gösterir
+// "rootDir": "./src"  => tsc ile oluşturulan dosyaların nereden alınacağını gösterir
+//"removeComments": true  => js dosyası oluşturuken yorumları temizler
