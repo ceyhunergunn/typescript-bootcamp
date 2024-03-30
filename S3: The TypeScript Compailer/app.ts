@@ -22,3 +22,21 @@ console.log(userName);
 // in tsconfig file
 
 // "target": "es2016"
+
+// ********************** Understanding TypeScript Core Libs ******************************
+
+// tsc --init => config file
+// in tsconfig file
+
+// "lib": [
+//     "dom",
+//     "ES6",
+//     "DOM.Iterable",
+//     "ScriptHost"
+//  ]
+
+const button = document.querySelector("button")!;
+
+button?.addEventListener("click", () => {
+  console.log("Clicked!");
+});
