@@ -37,9 +37,10 @@ console.log(userName);
 
 const button = document.querySelector("button")!;
 
-button?.addEventListener("click", () => {
-  console.log("Clicked!");
-});
+function clickHandler(message: string) {
+  console.log("Clicked! " + message);
+}
+button?.addEventListener("click", clickHandler.bind(null, "Ceyhun"));
 
 // ********************** Working with Source Maps ******************************
 
@@ -66,3 +67,21 @@ button?.addEventListener("click", () => {
 
 //"noEmitOnError": false ise hata alsa dahi js dosyası oluşturulacaktır.
 // true ise hatalı dosyalar hariç diğer dosyalar oluşturlacaktır
+
+// ********************** Strict Compilation ******************************
+
+// "strict": true değeri ve altındaki diğer değerler tammaen aynı şeyi yapıyor.
+// "strict": true olmalı veya altında bulunan diğer değerler true olmalı
+
+// "strict": true
+
+// veya
+
+// "noImplicitAny": true,
+// "strictNullChecks": true,
+// "strictFunctionTypes": true,
+// "strictBindCallApply": true,
+// "strictPropertyInitialization": true,
+// "noImplicitThis": true,
+// "useUnknownInCatchVariables": true,
+// "alwaysStrict": true,
