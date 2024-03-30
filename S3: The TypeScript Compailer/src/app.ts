@@ -1,6 +1,6 @@
 // ********************** USING WATCH MODULE ******************************
 let userName = "Ceyhun";
-
+// userName = 3;
 console.log(userName);
 
 // ********************** Compiling the Entire Project / Multiple Files ******************************
@@ -58,3 +58,11 @@ button?.addEventListener("click", () => {
 // "outDir": "./dist"  => tsc ile oluşturulan dosyaların nerede oluşturulacağını gösterir
 // "rootDir": "./src"  => tsc ile oluşturulan dosyaların nereden alınacağını gösterir
 //"removeComments": true  => js dosyası oluşturuken yorumları temizler
+
+// ********************** Stop Emitting Files on Compilation Errors ******************************
+
+// tsc --init => config file
+// in tsconfig file
+
+//"noEmitOnError": false ise hata alsa dahi js dosyası oluşturulacaktır.
+// true ise hatalı dosyalar hariç diğer dosyalar oluşturlacaktır
