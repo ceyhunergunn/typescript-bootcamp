@@ -40,3 +40,12 @@ const button = document.querySelector("button")!;
 button?.addEventListener("click", () => {
   console.log("Clicked!");
 });
+
+// ********************** Working with Source Maps ******************************
+
+// tsc --init => config file
+// in tsconfig file
+
+//"sourceMap": true,
+
+// Developer tool => source sekmesi => ts fosyalarını da gösterir.
