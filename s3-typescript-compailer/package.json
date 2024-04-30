@@ -1,0 +1,16 @@
+{
+  "name": "s3-typescript-compailer",
+  "version": "1.0.0",
+  "description": "TypeScript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server",
+    "dev": "lite-server"
+  },
+  "author": "Ceyhun Ergün",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
